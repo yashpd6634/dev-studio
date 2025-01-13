@@ -5,7 +5,7 @@
     "paths": {
       "@app/*": ["apps/studio/*"],
       "@repo/*": ["packages/*"],
-      "@ui/*": ["ui/*"]
+      "@ui/*": ["packages/ui/*"]
     },
     "plugins": [
       {
