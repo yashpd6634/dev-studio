@@ -6,6 +6,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "postinstall": "prisma generate",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "ui:add": "npm run -w @repo/ui ui:add --"
   },
