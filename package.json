@@ -6,7 +6,6 @@
     "build": "turbo run build --filter=...",
     "dev": "turbo run dev --filter=apps/studio",
     "lint": "turbo run lint",
-    "postinstall": "turbo run postinstall",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "ui:add": "npm run -w @repo/ui ui:add --"
   },
