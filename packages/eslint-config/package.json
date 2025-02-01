@@ -7,6 +7,9 @@
     "next.js",
     "react-internal.js"
   ],
+  "scripts": {
+    "build": "echo 'No build step required for eslint-config.'"
+  },
   "devDependencies": {
     "@vercel/style-guide": "^6.0.0",
     "eslint-config-turbo": "^2.0.4",

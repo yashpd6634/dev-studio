@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "private": true,
   "scripts": {
-    "build": "turbo run build --filter=...",
+    "build": "turbo run build --filter=studio",
     "dev": "turbo run dev --filter=apps/studio",
     "postinstall": "npm run build --workspaces",
     "lint": "turbo run lint",
