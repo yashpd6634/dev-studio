@@ -1,7 +1,10 @@
 "use client";
 import { EditorBtns } from "@repo/ui/lib/constant";
-import { Badge } from "@ui/components/ui/badge";
-import { EditorElement, useEditor } from "@ui/providers/editor/editor-provider";
+import { Badge } from "@repo/ui/components/ui/badge";
+import {
+  EditorElement,
+  useEditor,
+} from "@repo/ui/providers/editor/editor-provider";
 import clsx from "clsx";
 import { Trash } from "lucide-react";
 import React from "react";

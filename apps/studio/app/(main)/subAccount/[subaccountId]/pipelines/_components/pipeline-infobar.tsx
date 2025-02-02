@@ -1,21 +1,21 @@
 "use client";
-import CreatePipelineForm from "@ui/components/forms/create-pipeline-form";
-import { CustomModal2 } from "@ui/components/global/custom-modal";
-import { Button } from "@ui/components/ui/button";
+import CreatePipelineForm from "@repo/ui/components/forms/create-pipeline-form";
+import { CustomModal2 } from "@repo/ui/components/global/custom-modal";
+import { Button } from "@repo/ui/components/ui/button";
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@ui/components/ui/command";
+} from "@repo/ui/components/ui/command";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@ui/components/ui/popover";
-import { cn } from "@ui/lib/utils";
-import { useModal } from "@ui/providers/modal-provider";
+} from "@repo/ui/components/ui/popover";
+import { cn } from "@repo/ui/lib/utils";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { Pipeline } from "@prisma/client";
 import { Check, ChevronsUpDown, Plus } from "lucide-react";
 import Link from "next/link";

@@ -1,4 +1,4 @@
-import Loading from "@ui/components/global/loading";
+import Loading from "@repo/ui/components/global/loading";
 import React from "react";
 
 const LoadingAgencyPage = () => {

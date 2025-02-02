@@ -4,9 +4,9 @@ import {
   saveActivityLogsNotification,
   searchContacts,
   upsertTicket,
-} from "@ui/lib/queries";
-import { TicketFormSchema, TicketWithTags } from "@ui/lib/types";
-import { useModal } from "@ui/providers/modal-provider";
+} from "@repo/ui/lib/queries";
+import { TicketFormSchema, TicketWithTags } from "@repo/ui/lib/types";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Contact, Tag, User } from "@prisma/client";
 import { useRouter } from "next/navigation";
@@ -23,7 +23,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@ui/components/ui/form";
+} from "@repo/ui/components/ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import {
@@ -34,7 +34,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@ui/components/ui/select";
+} from "@repo/ui/components/ui/select";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { CheckIcon, ChevronsUpDownIcon, User2 } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
@@ -46,7 +46,7 @@ import {
   CommandInput,
   CommandItem,
 } from "../ui/command";
-import { cn } from "@ui/lib/utils";
+import { cn } from "@repo/ui/lib/utils";
 import Loading from "../global/loading";
 import TagCreator from "../global/tag-creator";
 

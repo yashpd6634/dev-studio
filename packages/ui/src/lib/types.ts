@@ -8,7 +8,7 @@ import {
   Ticket,
   User,
 } from "@prisma/client";
-import { ConnectionProviderProps } from "@ui/providers/connections-provider";
+import { ConnectionProviderProps } from "@repo/ui/providers/connections-provider";
 import { z } from "zod";
 import {
   _getTicketsWithAllRelations,

@@ -12,10 +12,10 @@ import {
   TabsTrigger,
   TabsList,
   TabsContent,
-} from "@ui/components/ui/tabs";
+} from "@repo/ui/components/ui/tabs";
 import { Button } from "@repo/ui/components/ui/button";
-import { Input } from "@ui/components/ui/input";
-import { Label } from "@ui/components/ui/label";
+import { Input } from "@repo/ui/components/ui/input";
+import { Label } from "@repo/ui/components/ui/label";
 import { CirclePlus, Trash2 } from "lucide-react";
 import {
   dropdownSettings,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useBilling } from "@ui/providers/billing-provider";
+import { useBilling } from "@repo/ui/providers/billing-provider";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { SubscriptionCard } from "./subscription-card";

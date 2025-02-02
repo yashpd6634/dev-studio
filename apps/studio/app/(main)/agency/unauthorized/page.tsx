@@ -1,4 +1,4 @@
-import Unauthorized from "@ui/components/unauthorized";
+import Unauthorized from "@repo/ui/components/unauthorized/index";
 import React from "react";
 
 type Props = {};

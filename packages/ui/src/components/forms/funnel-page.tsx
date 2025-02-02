@@ -24,13 +24,13 @@ import { Button } from "../ui/button";
 import Loading from "../global/loading";
 import { useToast } from "../ui/use-toast";
 import { FunnelPage } from "@prisma/client";
-import { FunnelPageSchema } from "@ui/lib/types";
+import { FunnelPageSchema } from "@repo/ui/lib/types";
 import {
   deleteFunnelePage,
   getFunnels,
   saveActivityLogsNotification,
   upsertFunnelPage,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 import { useRouter } from "next/navigation";
 import { v4 } from "uuid";
 import { CopyPlusIcon, Trash } from "lucide-react";

@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -1,4 +1,4 @@
-import { GetMediaFiles } from "@ui/lib/types";
+import { GetMediaFiles } from "@repo/ui/lib/types";
 import React from "react";
 import MediaUploadButton from "./upload-button";
 import {

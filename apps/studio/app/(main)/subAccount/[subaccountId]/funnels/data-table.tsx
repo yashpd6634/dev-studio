@@ -17,11 +17,11 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@ui/components/ui/table";
-import { useModal } from "@ui/providers/modal-provider";
-import { Input } from "@ui/components/ui/input";
-import { Button } from "@ui/components/ui/button";
-import { CustomModal2 } from "@ui/components/global/custom-modal";
+} from "@repo/ui/components/ui/table";
+import { useModal } from "@repo/ui/providers/modal-provider";
+import { Input } from "@repo/ui/components/ui/input";
+import { Button } from "@repo/ui/components/ui/button";
+import { CustomModal2 } from "@repo/ui/components/global/custom-modal";
 
 interface FunnelsDataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];

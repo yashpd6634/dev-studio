@@ -3,7 +3,7 @@ import ModalProvider from "@repo/ui/providers/modal-provider";
 import { ThemeProvider } from "@repo/ui/providers/theme-provider";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import { Toaster } from "@ui/components/ui/sonner";
+import { Toaster } from "@repo/ui/components/ui/sonner";
 import { BillingProvider } from "@repo/ui/providers/billing-provider";
 
 const font = DM_Sans({ subsets: ["latin"] });

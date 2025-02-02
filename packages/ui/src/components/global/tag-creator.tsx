@@ -22,7 +22,7 @@ import {
   getTagsForSubaccount,
   saveActivityLogsNotification,
   upsertTag,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 
 import {
   Command,
@@ -32,7 +32,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@ui/components/ui/command";
+} from "@repo/ui/components/ui/command";
 
 type Props = {
   subAccountId: string;

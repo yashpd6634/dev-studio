@@ -9,13 +9,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@ui/components/ui/form";
+} from "@repo/ui/components/ui/form";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import { useForm } from "react-hook-form";
 import { Funnel } from "@prisma/client";
 import { Input } from "../ui/input";
@@ -23,11 +23,14 @@ import { Textarea } from "../ui/textarea";
 
 import { Button } from "../ui/button";
 import Loading from "../global/loading";
-import { CreateFunnelFormSchema } from "@ui/lib/types";
-import { saveActivityLogsNotification, upsertFunnel } from "@ui/lib/queries";
+import { CreateFunnelFormSchema } from "@repo/ui/lib/types";
+import {
+  saveActivityLogsNotification,
+  upsertFunnel,
+} from "@repo/ui/lib/queries";
 import { v4 } from "uuid";
 import { toast } from "../ui/use-toast";
-import { useModal } from "@ui/providers/modal-provider";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import FileUpload from "../global/file-upload";

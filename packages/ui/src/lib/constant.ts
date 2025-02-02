@@ -1,37 +1,37 @@
-import Category from "@ui/components/icons/category";
-import Logs from "@ui/components/icons/clipboard";
-import Templates from "@ui/components/icons/cloud_download";
-import Home from "@ui/components/icons/home";
-import Payment from "@ui/components/icons/payment";
-import Settings from "@ui/components/icons/settings";
-import Workflows from "@ui/components/icons/workflows";
+import Category from "@repo/ui/components/icons/category";
+import Logs from "@repo/ui/components/icons/clipboard";
+import Templates from "@repo/ui/components/icons/cloud_download";
+import Home from "@repo/ui/components/icons/home";
+import Payment from "@repo/ui/components/icons/payment";
+import Settings from "@repo/ui/components/icons/settings";
+import Workflows from "@repo/ui/components/icons/workflows";
 import { Connection } from "./types";
-import BarChart from "@ui/components/icons/bar_chart";
-import Headphone from "@ui/components/icons/headphone";
-import Send from "@ui/components/icons/send";
-import Pipelines from "@ui/components/icons/pipelines";
-import Calendar from "@ui/components/icons/calender";
-import CheckCircle from "@ui/components/icons/check_circled";
-import Chip from "@ui/components/icons/chip";
-import Compass from "@ui/components/icons/compass";
-import Database from "@ui/components/icons/database";
-import Flag from "@ui/components/icons/flag";
-import Info from "@ui/components/icons/info";
-import LinkIcon from "@ui/components/icons/link";
-import Message from "@ui/components/icons/messages";
-import Power from "@ui/components/icons/power";
-import Receipt from "@ui/components/icons/receipt";
-import Shield from "@ui/components/icons/shield";
-import Star from "@ui/components/icons/star";
-import Tune from "@ui/components/icons/tune";
-import Video from "@ui/components/icons/video-recorder";
-import Wallet from "@ui/components/icons/wallet";
-import Warning from "@ui/components/icons/warning";
-import Person from "@ui/components/icons/person";
-import PluraCategory from "@ui/components/icons/plura-category";
-import ClipboardIcon from "@ui/components/icons/clipboardIcon";
-import Notification from "@ui/components/icons/notification";
-import Lock from "@ui/components/icons/lock";
+import BarChart from "@repo/ui/components/icons/bar_chart";
+import Headphone from "@repo/ui/components/icons/headphone";
+import Send from "@repo/ui/components/icons/send";
+import Pipelines from "@repo/ui/components/icons/pipelines";
+import Calendar from "@repo/ui/components/icons/calender";
+import CheckCircle from "@repo/ui/components/icons/check_circled";
+import Chip from "@repo/ui/components/icons/chip";
+import Compass from "@repo/ui/components/icons/compass";
+import Database from "@repo/ui/components/icons/database";
+import Flag from "@repo/ui/components/icons/flag";
+import Info from "@repo/ui/components/icons/info";
+import LinkIcon from "@repo/ui/components/icons/link";
+import Message from "@repo/ui/components/icons/messages";
+import Power from "@repo/ui/components/icons/power";
+import Receipt from "@repo/ui/components/icons/receipt";
+import Shield from "@repo/ui/components/icons/shield";
+import Star from "@repo/ui/components/icons/star";
+import Tune from "@repo/ui/components/icons/tune";
+import Video from "@repo/ui/components/icons/video-recorder";
+import Wallet from "@repo/ui/components/icons/wallet";
+import Warning from "@repo/ui/components/icons/warning";
+import Person from "@repo/ui/components/icons/person";
+import PluraCategory from "@repo/ui/components/icons/plura-category";
+import ClipboardIcon from "@repo/ui/components/icons/clipboardIcon";
+import Notification from "@repo/ui/components/icons/notification";
+import Lock from "@repo/ui/components/icons/lock";
 
 export const clients = [...new Array(10)].map((client, index) => ({
   href: `/${index + 1}.png`,
@@ -119,11 +119,31 @@ export const products = [
 ];
 
 export const menuOptions = [
-  { name: "Dashboard", Component: Home, href: `/subaccount/[subaccountId]/automations` },
-  { name: "Workflows", Component: Workflows, href: "/subaccount/[subaccountId]/automations/workflows" },
-  { name: "Connections", Component: Category, href: "/subaccount/[subaccountId]/automations/connections" },
-  { name: "Billing", Component: Payment, href: "/subaccount/[subaccountId]/automations/billing" },
-  { name: "Templates", Component: Templates, href: "/subaccount/[subaccountId]/automations/templates" },
+  {
+    name: "Dashboard",
+    Component: Home,
+    href: `/subaccount/[subaccountId]/automations`,
+  },
+  {
+    name: "Workflows",
+    Component: Workflows,
+    href: "/subaccount/[subaccountId]/automations/workflows",
+  },
+  {
+    name: "Connections",
+    Component: Category,
+    href: "/subaccount/[subaccountId]/automations/connections",
+  },
+  {
+    name: "Billing",
+    Component: Payment,
+    href: "/subaccount/[subaccountId]/automations/billing",
+  },
+  {
+    name: "Templates",
+    Component: Templates,
+    href: "/subaccount/[subaccountId]/automations/templates",
+  },
   // { name: "Settings", Component: Settings, href: "/subaccount/[subaccountId]/automations/settings" },
 ];
 

@@ -25,11 +25,11 @@ import {
   CommandList,
 } from "../ui/command";
 import Link from "next/link";
-import { useModal } from "@ui/providers/modal-provider";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { CustomModal2 } from "../global/custom-modal";
 import SubAccountDetails from "../forms/subaccount-details";
 import { Separator } from "../ui/separator";
-import { icons } from "@ui/lib/constant";
+import { icons } from "@repo/ui/lib/constant";
 
 type Props = {
   defaultOpen?: boolean;

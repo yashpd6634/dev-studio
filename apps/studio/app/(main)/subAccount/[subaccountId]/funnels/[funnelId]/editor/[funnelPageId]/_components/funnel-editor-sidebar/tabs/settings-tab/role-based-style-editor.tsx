@@ -8,7 +8,7 @@ import {
   SelectItem,
 } from "@repo/ui/components/ui/select";
 import { Textarea } from "@repo/ui/components/ui/textarea";
-import { Label } from "@ui/components/ui/label";
+import { Label } from "@repo/ui/components/ui/label";
 import React, { useEffect, useState } from "react";
 import { getRoles } from "./component-roles";
 import { useEditor } from "@repo/ui/providers/editor/editor-provider";

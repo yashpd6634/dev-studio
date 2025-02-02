@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { v4 } from "uuid";
 
-import { Button } from "@ui/components/ui/button";
+import { Button } from "@repo/ui/components/ui/button";
 import {
   Form,
   FormControl,
@@ -13,17 +13,17 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@ui/components/ui/form";
+} from "@repo/ui/components/ui/form";
 import { useRouter } from "next/navigation";
 
-import { Input } from "@ui/components/ui/input";
+import { Input } from "@repo/ui/components/ui/input";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
   CardContent,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 
 import FileUpload from "../global/file-upload";
 import { Agency, SubAccount } from "@prisma/client";
@@ -31,10 +31,10 @@ import { useToast } from "../ui/use-toast";
 import {
   saveActivityLogsNotification,
   upsertSubAccount,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 import { useEffect } from "react";
 import Loading from "../global/loading";
-import { useModal } from "@ui/providers/modal-provider";
+import { useModal } from "@repo/ui/providers/modal-provider";
 
 const formSchema = z.object({
   name: z.string(),

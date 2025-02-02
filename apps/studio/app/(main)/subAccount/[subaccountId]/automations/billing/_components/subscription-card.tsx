@@ -13,8 +13,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
-import { Button } from "@ui/components/ui/button";
+} from "@repo/ui/components/ui/card";
+import { Button } from "@repo/ui/components/ui/button";
 
 export const SubscriptionCard = ({ onPayment, products, tier }: Props) => {
   console.log(products);

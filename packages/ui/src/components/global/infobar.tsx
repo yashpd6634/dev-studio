@@ -1,6 +1,6 @@
 "use client";
 import { UserButton } from "@clerk/nextjs";
-import { NotificationWithUser } from "@ui/lib/types";
+import { NotificationWithUser } from "@repo/ui/lib/types";
 import React, { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import {
@@ -16,7 +16,7 @@ import { Card } from "../ui/card";
 import { Switch } from "../ui/switch";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { ModeToggle } from "./mode-toggle";
-import { useBilling } from "@ui/providers/billing-provider";
+import { useBilling } from "@repo/ui/providers/billing-provider";
 import { onPaymentDetails } from "@app/studio/app/(main)/subaccount/[subaccountId]/automations/billing/_actions/payment-connections";
 import { Input } from "../ui/input";
 import {

@@ -8,11 +8,11 @@ import {
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@ui/components/ui/command";
+} from "@repo/ui/components/ui/command";
 import { Command as CommandPrimitive, useCommandState } from "cmdk";
 import { useEffect, forwardRef } from "react";
-import { Badge } from "@ui/components/ui/badge";
-import { cn } from "@ui/lib/utils";
+import { Badge } from "@repo/ui/components/ui/badge";
+import { cn } from "@repo/ui/lib/utils";
 
 export interface Option {
   value: string;
@@ -111,7 +111,7 @@ function transToGroupOption(options: Option[], groupBy?: string) {
     if (!groupOption[key]) {
       groupOption[key] = [];
     }
-    groupOption[key].push(option);
+    groupOption[key]?.push(option);
   });
   return groupOption;
 }

@@ -28,7 +28,10 @@ import {
 } from "../ui/select";
 import { Button } from "../ui/button";
 import Loading from "../global/loading";
-import { saveActivityLogsNotification, sendInvitation } from "@ui/lib/queries";
+import {
+  saveActivityLogsNotification,
+  sendInvitation,
+} from "@repo/ui/lib/queries";
 import { useToast } from "../ui/use-toast";
 
 interface SendInvitationProps {

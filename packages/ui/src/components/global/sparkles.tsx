@@ -6,7 +6,7 @@ import type { Container, Engine } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
 import { motion, useAnimation } from "framer-motion";
-import { cn } from "@ui/lib/utils";
+import { cn } from "@repo/ui/lib/utils";
 
 let ParticlesGlobal: any;
 let initParticlesEngineGlobal: (props: any) => any;

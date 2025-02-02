@@ -1,7 +1,7 @@
 import BlurPage from "@repo/ui/components/global/blur-page";
 import { getMedia } from "@repo/ui/lib/queries";
 import React from "react";
-import MediaComponent from "@ui/components/media";
+import MediaComponent from "@repo/ui/components/media/index";
 
 type Props = {
   params: { subaccountId: string };

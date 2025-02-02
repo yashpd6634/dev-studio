@@ -6,9 +6,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@ui/components/ui/accordion";
-import { Input } from "@ui/components/ui/input";
-import { Label } from "@ui/components/ui/label";
+} from "@repo/ui/components/ui/accordion";
+import { Input } from "@repo/ui/components/ui/input";
+import { Label } from "@repo/ui/components/ui/label";
 import {
   AlignCenter,
   AlignHorizontalJustifyCenterIcon,
@@ -24,7 +24,7 @@ import {
   ChevronsLeftRightIcon,
   LucideImageDown,
 } from "lucide-react";
-import { Tabs, TabsTrigger, TabsList } from "@ui/components/ui/tabs";
+import { Tabs, TabsTrigger, TabsList } from "@repo/ui/components/ui/tabs";
 import {
   Select,
   SelectContent,
@@ -33,9 +33,9 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@ui/components/ui/select";
+} from "@repo/ui/components/ui/select";
 import { useEditor } from "@repo/ui/providers/editor/editor-provider";
-import { Slider } from "@ui/components/ui/slider";
+import { Slider } from "@repo/ui/components/ui/slider";
 import DropdownSettings from "./dropdown-settings";
 import RoleBasedStyleEditor from "./role-based-style-editor";
 

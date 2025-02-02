@@ -13,7 +13,7 @@ import {
 } from "@prisma/client";
 import Image from "next/image";
 
-import { Badge } from "@ui/components/ui/badge";
+import { Badge } from "@repo/ui/components/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,7 +21,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@ui/components/ui/dropdown-menu";
+} from "@repo/ui/components/ui/dropdown-menu";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -32,18 +32,18 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@ui/components/ui/alert-dialog";
-import { Button } from "@ui/components/ui/button";
+} from "@repo/ui/components/ui/alert-dialog";
+import { Button } from "@repo/ui/components/ui/button";
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
-import { useModal } from "@ui/providers/modal-provider";
-import UserDetails from "@ui/components/forms/user-details";
+import { useModal } from "@repo/ui/providers/modal-provider";
+import UserDetails from "@repo/ui/components/forms/user-details";
 
-import { deleteUser, getUser } from "@ui/lib/queries";
-import { useToast } from "@ui/components/ui/use-toast";
+import { deleteUser, getUser } from "@repo/ui/lib/queries";
+import { useToast } from "@repo/ui/components/ui/use-toast";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { UsersWithAgencySubAccountPermissionsSidebarOptions } from "@ui/lib/types";
-import { CustomModal2 } from "@ui/components/global/custom-modal";
+import { UsersWithAgencySubAccountPermissionsSidebarOptions } from "@repo/ui/lib/types";
+import { CustomModal2 } from "@repo/ui/components/global/custom-modal";
 
 export const columns: ColumnDef<UsersWithAgencySubAccountPermissionsSidebarOptions>[] =
   [

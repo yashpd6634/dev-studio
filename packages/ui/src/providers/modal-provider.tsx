@@ -1,7 +1,7 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 import { Agency, Contact, Plan, User } from "@prisma/client";
-import { TicketDetails } from "@ui/lib/types";
+import { TicketDetails } from "@repo/ui/lib/types";
 interface ModalProviderProps {
   children: React.ReactNode;
 }

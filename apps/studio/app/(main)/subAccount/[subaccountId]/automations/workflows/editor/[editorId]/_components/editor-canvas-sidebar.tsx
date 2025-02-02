@@ -1,30 +1,41 @@
 "use client";
-import { EditorCanvasTypes, AutomationEditorNodeType } from "@ui/lib/types";
-import { useNodeConnections } from "@ui/providers/connections-provider";
-import { useAutomationEditor } from "@ui/providers/editor-provider";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@ui/components/ui/tabs";
+import {
+  EditorCanvasTypes,
+  AutomationEditorNodeType,
+} from "@repo/ui/lib/types";
+import { useNodeConnections } from "@repo/ui/providers/connections-provider";
+import { useAutomationEditor } from "@repo/ui/providers/editor-provider";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@repo/ui/components/ui/tabs";
 
 import React, { useEffect } from "react";
-import { Separator } from "@ui/components/ui/separator";
-import { CONNECTIONS, EditorCanvasDefaultCardTypes } from "@ui/lib/constant";
+import { Separator } from "@repo/ui/components/ui/separator";
+import {
+  CONNECTIONS,
+  EditorCanvasDefaultCardTypes,
+} from "@repo/ui/lib/constant";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import {
   fetchBotSlackChannels,
   onConnections,
   onDragStart,
-} from "@ui/lib/editor-utils";
+} from "@repo/ui/lib/editor-utils";
 import EditorCanvasIconHelper from "./editor-canvas-card-icon-helper";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@ui/components/ui/accordion";
+} from "@repo/ui/components/ui/accordion";
 import RenderConnectionAccordion from "./render-connection-accordian";
 import RenderOutputAccordion from "./render-output-accordian";
 import { useAutomationStore } from "@repo/store/automation/automation-store";

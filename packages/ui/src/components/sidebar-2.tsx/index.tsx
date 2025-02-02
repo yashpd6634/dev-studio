@@ -1,4 +1,4 @@
-import { getAuthUserDetails } from "@ui/lib/queries";
+import { getAuthUserDetails } from "@repo/ui/lib/queries";
 import MenuOptions from "./menu-options";
 
 type Props = {

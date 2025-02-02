@@ -1,6 +1,6 @@
-import { ConnectionProviderProps } from "@ui/providers/connections-provider";
-import { EditorCanvasCardType } from "@ui/lib/types";
-import { AutomationEditorState } from "@ui/providers/editor-provider";
+import { ConnectionProviderProps } from "@repo/ui/providers/connections-provider";
+import { EditorCanvasCardType } from "@repo/ui/lib/types";
+import { AutomationEditorState } from "@repo/ui/providers/editor-provider";
 import { getDiscordConnectionUrl } from "@app/studio/app/(main)/subaccount/[subaccountId]/automations/connections/_actions/discord-connection";
 import {
   getNotionConnection,
@@ -10,7 +10,7 @@ import {
   getSlackConnection,
   listBotChannels,
 } from "@app/studio/app/(main)/subaccount/[subaccountId]/automations/connections/_actions/slack-connection";
-import { Option } from "@ui/components/ui/multiple-selector";
+import { Option } from "@repo/ui/components/ui/multiple-selector";
 
 export const onDragStart = (
   event: any,

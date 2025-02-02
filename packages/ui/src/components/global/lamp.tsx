@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "@ui/lib/utils";
+import { cn } from "@repo/ui/lib/utils";
 import { SparklesCore } from "./sparkles";
 
 export function LampComponent() {

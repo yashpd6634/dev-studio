@@ -1,8 +1,8 @@
 import React, { useCallback } from "react";
 import { Option } from "./content-based-on-title";
-import { ConnectionProviderProps } from "@ui/providers/connections-provider";
+import { ConnectionProviderProps } from "@repo/ui/providers/connections-provider";
 import { usePathname } from "next/navigation";
-import { Button } from "@ui/components/ui/button";
+import { Button } from "@repo/ui/components/ui/button";
 import { postContentToWebHook } from "@app/studio/app/(main)/subaccount/[subaccountId]/automations/connections/_actions/discord-connection";
 import { onCreateNodeTemplate } from "../../../_actions/workflow-connections";
 import { toast } from "sonner";

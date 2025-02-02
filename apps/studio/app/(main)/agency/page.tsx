@@ -6,7 +6,7 @@ import {
 import { redirect } from "next/navigation";
 import React from "react";
 import { Plan } from "@prisma/client";
-import AgencyDetails from "@ui/components/forms/agency-details";
+import AgencyDetails from "@repo/ui/components/forms/agency-details";
 
 const Page = async ({
   searchParams,

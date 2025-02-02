@@ -1,4 +1,4 @@
-import { WorkflowFormSchema } from "@ui/lib/types";
+import { WorkflowFormSchema } from "@repo/ui/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -21,7 +21,7 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Loader2 } from "lucide-react";
-import { useModal } from "@ui/providers/modal-provider";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { toast } from "sonner";
 import { onCreateWorkflow } from "@app/studio/app/(main)/subaccount/[subaccountId]/automations/workflows/_actions/workflow-connections";
 

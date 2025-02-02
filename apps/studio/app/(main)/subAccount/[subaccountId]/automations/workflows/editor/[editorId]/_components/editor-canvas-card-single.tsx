@@ -1,17 +1,17 @@
-import { EditorCanvasCardType } from "@ui/lib/types";
-import { useAutomationEditor } from "@ui/providers/editor-provider";
+import { EditorCanvasCardType } from "@repo/ui/lib/types";
+import { useAutomationEditor } from "@repo/ui/providers/editor-provider";
 import React, { useMemo } from "react";
 import { Position, useNodeId } from "@xyflow/react";
 import EditorCanvasIconHelper from "./editor-canvas-card-icon-helper";
 import CustomHandle from "./custom-handle";
-import { Badge } from "@ui/components/ui/badge";
+import { Badge } from "@repo/ui/components/ui/badge";
 
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import clsx from "clsx";
 
 type Props = {};

@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import ConnectionCard from "../../../../connections/_components/connection-card";
-import { AccordionContent } from "@ui/components/ui/accordion";
-import MultipleSelector from "@ui/components/ui/multiple-selector";
-import { Connection } from "@ui/lib/types";
-import { useNodeConnections } from "@ui/providers/connections-provider";
-import { AutomationEditorState } from "@ui/providers/editor-provider";
+import { AccordionContent } from "@repo/ui/components/ui/accordion";
+import MultipleSelector from "@repo/ui/components/ui/multiple-selector";
+import { Connection } from "@repo/ui/lib/types";
+import { useNodeConnections } from "@repo/ui/providers/connections-provider";
+import { AutomationEditorState } from "@repo/ui/providers/editor-provider";
 import { useAutomationStore } from "@repo/store/automation/automation-store";
 import {
   Command,
@@ -13,15 +13,15 @@ import {
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "@ui/components/ui/command";
+} from "@repo/ui/components/ui/command";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@ui/components/ui/popover";
+} from "@repo/ui/components/ui/popover";
 import { CheckIcon, ChevronsUpDown } from "lucide-react";
-import { Button } from "@ui/components/ui/button";
-import { cn } from "@ui/lib/utils";
+import { Button } from "@repo/ui/components/ui/button";
+import { cn } from "@repo/ui/lib/utils";
 
 const frameworks = [
   {

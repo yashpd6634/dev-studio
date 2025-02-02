@@ -1,4 +1,4 @@
-import { CONNECTIONS } from "@ui/lib/constant";
+import { CONNECTIONS } from "@repo/ui/lib/constant";
 import React from "react";
 import ConnectionCard from "./_components/connection-card";
 import { currentUser } from "@clerk/nextjs";

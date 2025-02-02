@@ -1,6 +1,6 @@
 import React from "react";
-import { Progress } from "@ui/components/ui/progress";
-import { Card, CardContent, CardTitle } from "@ui/components/ui/card";
+import { Progress } from "@repo/ui/components/ui/progress";
+import { Card, CardContent, CardTitle } from "@repo/ui/components/ui/card";
 
 type Props = {
   credits: number;

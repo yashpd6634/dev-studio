@@ -1,7 +1,7 @@
-import TicketForm from "@ui/components/forms/ticket-form";
-import CustomModal from "@ui/components/global/custom-modal";
-import TagComponent from "@ui/components/global/tag";
-import LinkIcon from "@ui/components/icons/link";
+import TicketForm from "@repo/ui/components/forms/ticket-form";
+import CustomModal from "@repo/ui/components/global/custom-modal";
+import TagComponent from "@repo/ui/components/global/tag";
+import LinkIcon from "@repo/ui/components/icons/link";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -12,15 +12,19 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@ui/components/ui/alert-dialog";
-import { Avatar, AvatarFallback, AvatarImage } from "@ui/components/ui/avatar";
+} from "@repo/ui/components/ui/alert-dialog";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@repo/ui/components/ui/avatar";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,16 +32,19 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@ui/components/ui/dropdown-menu";
+} from "@repo/ui/components/ui/dropdown-menu";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@ui/components/ui/hover-card";
-import { toast } from "@ui/components/ui/use-toast";
-import { deleteTicket, saveActivityLogsNotification } from "@ui/lib/queries";
-import { TicketWithTags } from "@ui/lib/types";
-import { useModal } from "@ui/providers/modal-provider";
+} from "@repo/ui/components/ui/hover-card";
+import { toast } from "@repo/ui/components/ui/use-toast";
+import {
+  deleteTicket,
+  saveActivityLogsNotification,
+} from "@repo/ui/lib/queries";
+import { TicketWithTags } from "@repo/ui/lib/types";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { Contact2, Edit, MoreHorizontalIcon, Trash, User2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { Dispatch, SetStateAction } from "react";

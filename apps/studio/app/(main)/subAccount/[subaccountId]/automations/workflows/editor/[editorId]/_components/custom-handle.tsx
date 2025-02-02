@@ -1,4 +1,4 @@
-import { useAutomationEditor } from "@ui/providers/editor-provider";
+import { useAutomationEditor } from "@repo/ui/providers/editor-provider";
 import React, { CSSProperties } from "react";
 import { Handle, HandleProps } from "@xyflow/react";
 

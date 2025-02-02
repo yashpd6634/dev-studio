@@ -4,7 +4,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@ui/components/ui/tabs";
+} from "@repo/ui/components/ui/tabs";
 import { Database, Plus, SettingsIcon, SquareStackIcon } from "lucide-react";
 
 type Props = {};

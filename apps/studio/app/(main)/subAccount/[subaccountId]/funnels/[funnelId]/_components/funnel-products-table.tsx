@@ -7,17 +7,17 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@ui/components/ui/table";
+} from "@repo/ui/components/ui/table";
 import Stripe from "stripe";
 import Image from "next/image";
 import {
   saveActivityLogsNotification,
   updateFunnelProducts,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 import { Funnel } from "@prisma/client";
 import { useRouter } from "next/navigation";
-import { Input } from "@ui/components/ui/input";
-import { Button } from "@ui/components/ui/button";
+import { Input } from "@repo/ui/components/ui/input";
+import { Button } from "@repo/ui/components/ui/button";
 
 interface FunnelProductsTableProps {
   defaultData: Funnel;

@@ -21,7 +21,10 @@ import {
   FormLabel,
   FormMessage,
 } from "../ui/form";
-import { createMedia, saveActivityLogsNotification } from "@ui/lib/queries";
+import {
+  createMedia,
+  saveActivityLogsNotification,
+} from "@repo/ui/lib/queries";
 import { Input } from "../ui/input";
 import FileUpload from "../global/file-upload";
 import { Button } from "../ui/button";

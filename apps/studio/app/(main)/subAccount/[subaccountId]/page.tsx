@@ -1,15 +1,15 @@
-import BlurPage from "@ui/components/global/blur-page";
-import CircleProgress from "@ui/components/global/circle-progress";
-import PipelineValue from "@ui/components/global/pipeline-value";
-import SubaccountFunnelChart from "@ui/components/global/subaccount-funnel-chart";
-import { Badge } from "@ui/components/ui/badge";
+import BlurPage from "@repo/ui/components/global/blur-page";
+import CircleProgress from "@repo/ui/components/global/circle-progress";
+import PipelineValue from "@repo/ui/components/global/pipeline-value";
+import SubaccountFunnelChart from "@repo/ui/components/global/subaccount-funnel-chart";
+import { Badge } from "@repo/ui/components/ui/badge";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 
 import {
   Table,
@@ -19,7 +19,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@ui/components/ui/table";
+} from "@repo/ui/components/ui/table";
 import { AreaChart, BadgeDelta } from "@tremor/react";
 import {
   ClipboardIcon,

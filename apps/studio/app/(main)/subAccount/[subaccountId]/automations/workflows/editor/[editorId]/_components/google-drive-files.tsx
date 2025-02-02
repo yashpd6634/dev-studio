@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
 import axios from "axios";
 import { getGoogleListener } from "../../../_actions/workflow-connections";
-import { Button } from "@ui/components/ui/button";
-import { Card, CardDescription } from "@ui/components/ui/card";
-import { CardContainer } from "@ui/components/global/3d-card";
+import { Button } from "@repo/ui/components/ui/button";
+import { Card, CardDescription } from "@repo/ui/components/ui/card";
+import { CardContainer } from "@repo/ui/components/global/3d-card";
 
 type Props = {};
 

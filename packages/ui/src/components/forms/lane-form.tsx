@@ -9,31 +9,31 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@ui/components/ui/form";
+} from "@repo/ui/components/ui/form";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
   CardContent,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import { useForm } from "react-hook-form";
 import { Funnel, Lane, Pipeline } from "@prisma/client";
 import { Input } from "../ui/input";
 
 import { Button } from "../ui/button";
 import Loading from "../global/loading";
-import { LaneFormSchema } from "@ui/lib/types";
+import { LaneFormSchema } from "@repo/ui/lib/types";
 import {
   getPipelineDetails,
   saveActivityLogsNotification,
   upsertFunnel,
   upsertLane,
   upsertPipeline,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 import { v4 } from "uuid";
 import { toast } from "../ui/use-toast";
-import { useModal } from "@ui/providers/modal-provider";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 

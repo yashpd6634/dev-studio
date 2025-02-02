@@ -44,7 +44,7 @@ import {
   saveActivityLogsNotification,
   updateAgencyDetails,
   upsertAgency,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 import { Button } from "../ui/button";
 import Loading from "../global/loading";
 import { v4 } from "uuid";

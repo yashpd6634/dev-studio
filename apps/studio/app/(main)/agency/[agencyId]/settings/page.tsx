@@ -2,7 +2,7 @@ import { currentUser } from "@clerk/nextjs";
 import React from "react";
 import db from "@repo/db/client";
 import AgencyDetails from "@repo/ui/components/forms/agency-details";
-import UserDetails from "@ui/components/forms/user-details";
+import UserDetails from "@repo/ui/components/forms/user-details";
 
 type Props = {
   params: { agencyId: string };

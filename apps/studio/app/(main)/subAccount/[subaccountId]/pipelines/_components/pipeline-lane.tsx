@@ -1,5 +1,5 @@
 "use client";
-import CreateLaneForm from "@ui/components/forms/lane-form";
+import CreateLaneForm from "@repo/ui/components/forms/lane-form";
 
 import {
   AlertDialog,
@@ -11,8 +11,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@ui/components/ui/alert-dialog";
-import { Badge } from "@ui/components/ui/badge";
+} from "@repo/ui/components/ui/alert-dialog";
+import { Badge } from "@repo/ui/components/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,18 +20,18 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@ui/components/ui/dropdown-menu";
-import { deleteLane, saveActivityLogsNotification } from "@ui/lib/queries";
-import { LaneDetail, TicketWithTags } from "@ui/lib/types";
-import { cn } from "@ui/lib/utils";
-import { useModal } from "@ui/providers/modal-provider";
+} from "@repo/ui/components/ui/dropdown-menu";
+import { deleteLane, saveActivityLogsNotification } from "@repo/ui/lib/queries";
+import { LaneDetail, TicketWithTags } from "@repo/ui/lib/types";
+import { cn } from "@repo/ui/lib/utils";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { Draggable, Droppable } from "react-beautiful-dnd";
 import { Edit, MoreVertical, PlusCircleIcon, Trash } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { Dispatch, SetStateAction, useMemo } from "react";
 // import PipelineTicket from './pipeline-ticket'
-import { CustomModal2 } from "@ui/components/global/custom-modal";
-import TicketForm from "@ui/components/forms/ticket-form";
+import { CustomModal2 } from "@repo/ui/components/global/custom-modal";
+import TicketForm from "@repo/ui/components/forms/ticket-form";
 import PipelineTicket from "./pipeline-ticket";
 
 interface PipelaneLaneProps {

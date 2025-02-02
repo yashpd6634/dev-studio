@@ -1,6 +1,9 @@
 "use client";
-import { EditorCanvasCardType, AutomationEditorNodeType } from "@ui/lib/types";
-import { useAutomationEditor } from "@ui/providers/editor-provider";
+import {
+  EditorCanvasCardType,
+  AutomationEditorNodeType,
+} from "@repo/ui/lib/types";
+import { useAutomationEditor } from "@repo/ui/providers/editor-provider";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ReactFlow,
@@ -22,11 +25,11 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@ui/components/ui/resizable";
+} from "@repo/ui/components/ui/resizable";
 import { toast } from "sonner";
 import { usePathname } from "next/navigation";
 import { v4 } from "uuid";
-import { EditorCanvasDefaultCardTypes } from "@ui/lib/constant";
+import { EditorCanvasDefaultCardTypes } from "@repo/ui/lib/constant";
 import FlowInstance from "./flow-instance";
 import EditorCanvasSidebar from "./editor-canvas-sidebar";
 import { onGetNodesEdges } from "../../../_actions/workflow-connections";

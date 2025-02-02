@@ -1,10 +1,13 @@
 "use client";
-import Loading from "@ui/components/global/loading";
-import { Badge } from "@ui/components/ui/badge";
-import { toast } from "@ui/components/ui/use-toast";
-import { getFunnel, getSubaccountDetails } from "@ui/lib/queries";
-// import { getStripe } from "@ui/lib/stripe/stripe-client";
-import { EditorElement, useEditor } from "@ui/providers/editor/editor-provider";
+import Loading from "@repo/ui/components/global/loading";
+import { Badge } from "@repo/ui/components/ui/badge";
+import { toast } from "@repo/ui/components/ui/use-toast";
+import { getFunnel, getSubaccountDetails } from "@repo/ui/lib/queries";
+// import { getStripe } from "@repo/ui/lib/stripe/stripe-client";
+import {
+  EditorElement,
+  useEditor,
+} from "@repo/ui/providers/editor/editor-provider";
 // import {
 //   EmbeddedCheckout,
 //   EmbeddedCheckoutProvider,

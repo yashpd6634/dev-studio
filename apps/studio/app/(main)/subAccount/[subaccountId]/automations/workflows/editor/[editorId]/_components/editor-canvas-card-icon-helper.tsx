@@ -14,7 +14,7 @@ import {
   Webhook,
   Zap,
 } from "lucide-react";
-import { EditorCanvasTypes } from "@ui/lib/types";
+import { EditorCanvasTypes } from "@repo/ui/lib/types";
 
 type Props = { type: EditorCanvasTypes };
 

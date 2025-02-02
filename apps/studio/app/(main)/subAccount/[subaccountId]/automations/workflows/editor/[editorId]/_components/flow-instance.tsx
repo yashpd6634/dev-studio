@@ -1,6 +1,6 @@
 "use client";
-import { Button } from "@ui/components/ui/button";
-import { useNodeConnections } from "@ui/providers/connections-provider";
+import { Button } from "@repo/ui/components/ui/button";
+import { useNodeConnections } from "@repo/ui/providers/connections-provider";
 import { usePathname } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
 import {

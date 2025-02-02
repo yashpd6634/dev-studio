@@ -1,5 +1,5 @@
-import { ConnectionsProvider } from "@ui/providers/connections-provider";
-import AutomationEditorProvider from "@ui/providers/editor-provider";
+import { ConnectionsProvider } from "@repo/ui/providers/connections-provider";
+import AutomationEditorProvider from "@repo/ui/providers/editor-provider";
 import React from "react";
 import EditorCanvas from "./_components/editor-canvas";
 

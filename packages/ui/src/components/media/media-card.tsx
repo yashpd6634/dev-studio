@@ -9,7 +9,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@ui/components/ui/dropdown-menu";
+} from "@repo/ui/components/ui/dropdown-menu";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -20,10 +20,13 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@ui/components/ui/alert-dialog";
+} from "@repo/ui/components/ui/alert-dialog";
 import { Copy, MoreHorizontal, Trash } from "lucide-react";
 import Image from "next/image";
-import { deleteMedia, saveActivityLogsNotification } from "@ui/lib/queries";
+import {
+  deleteMedia,
+  saveActivityLogsNotification,
+} from "@repo/ui/lib/queries";
 import { toast } from "../ui/use-toast";
 
 type Props = { file: Media };

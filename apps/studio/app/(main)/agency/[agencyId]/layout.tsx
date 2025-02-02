@@ -7,7 +7,7 @@ import {
 } from "@repo/ui/lib/queries";
 import { redirect } from "next/navigation";
 import React from "react";
-import BlurPage from "@ui/components/global/blur-page";
+import BlurPage from "@repo/ui/components/global/blur-page";
 import InfoBar from "@repo/ui/components/global/infobar";
 
 type Props = {

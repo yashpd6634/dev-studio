@@ -5,8 +5,8 @@ import { SubAccount, User } from "@prisma/client";
 import {
   AuthUserWithAgencySigebarOptionsSubAccounts,
   UserWithPermissionsAndSubAccounts,
-} from "@ui/lib/types";
-import { useModal } from "@ui/providers/modal-provider";
+} from "@repo/ui/lib/types";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import { useToast } from "../ui/use-toast";
 import { useRouter } from "next/navigation";
 import {
@@ -15,7 +15,7 @@ import {
   getUserPermissions,
   saveActivityLogsNotification,
   updateUser,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 import z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";

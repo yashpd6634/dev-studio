@@ -1,17 +1,20 @@
 "use client";
 import { EditorBtns } from "@repo/ui/lib/constant";
-import ContactForm from "@ui/components/forms/contact-form";
-import { Badge } from "@ui/components/ui/badge";
-import { toast } from "@ui/components/ui/use-toast";
+import ContactForm from "@repo/ui/components/forms/contact-form";
+import { Badge } from "@repo/ui/components/ui/badge";
+import { toast } from "@repo/ui/components/ui/use-toast";
 
 import {
   getFunnel,
   saveActivityLogsNotification,
   upsertContact,
-} from "@ui/lib/queries";
+} from "@repo/ui/lib/queries";
 
-import { ContactUserFormSchema } from "@ui/lib/types";
-import { EditorElement, useEditor } from "@ui/providers/editor/editor-provider";
+import { ContactUserFormSchema } from "@repo/ui/lib/types";
+import {
+  EditorElement,
+  useEditor,
+} from "@repo/ui/providers/editor/editor-provider";
 import clsx from "clsx";
 import { Trash } from "lucide-react";
 import { useRouter } from "next/navigation";

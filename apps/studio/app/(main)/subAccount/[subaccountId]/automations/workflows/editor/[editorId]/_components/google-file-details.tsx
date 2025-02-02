@@ -1,6 +1,10 @@
-import { Card, CardContent, CardDescription } from "@ui/components/ui/card";
-import { onAddTemplate } from "@ui/lib/editor-utils";
-import { ConnectionProviderProps } from "@ui/providers/connections-provider";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+} from "@repo/ui/components/ui/card";
+import { onAddTemplate } from "@repo/ui/lib/editor-utils";
+import { ConnectionProviderProps } from "@repo/ui/providers/connections-provider";
 import React from "react";
 
 type Props = {

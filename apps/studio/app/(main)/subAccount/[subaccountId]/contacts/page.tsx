@@ -16,7 +16,7 @@ import {
   AvatarImage,
 } from "@repo/ui/components/ui/avatar";
 import { Badge } from "@repo/ui/components/ui/badge";
-import format from "date-fns/format";
+import { format } from "date-fns/format";
 import CreateContactButton from "./_components/create-contact-btn";
 
 type Props = {

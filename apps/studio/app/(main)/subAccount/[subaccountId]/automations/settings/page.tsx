@@ -1,4 +1,4 @@
-import ProfileForm from "@ui/components/forms/profile-form";
+import ProfileForm from "@repo/ui/components/forms/profile-form";
 import React from "react";
 import ProfilePicture from "./_components/profile-picture";
 import db from "@repo/db/client";
@@ -28,7 +28,7 @@ const Settings = async (props: Props) => {
 
   const uploadProfileImage = async (image: string) => {
     "use server";
-    console.log("uploading image....")
+    console.log("uploading image....");
     const id = authUser.id;
     const response = await db.user.update({
       where: {

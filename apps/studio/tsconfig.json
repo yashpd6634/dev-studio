@@ -3,9 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["apps/studio/*"],
+      "@app/studio/*": ["apps/studio/*"],
       "@repo/*": ["packages/*"],
-      "@ui/*": ["packages/ui/src/*"]
+      "@ui/*": ["packages/ui/src/*"],
+      "@repo/ui/*": ["packages/ui/src/*"]
     },
     "plugins": [
       {
@@ -15,11 +16,13 @@
     "types": ["@uploadcare/file-uploader/types/jsx"]
   },
   "include": [
-    "next-env.d.ts",
-    "**/*.js",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts", "../../packages/ui/src/lib/editor-utils.ts", "../../packages/ui/src/components/table/columns.tsx", "../../packages/ui/src/components/table/data-table.tsx",
-  ],
+  "next-env.d.ts",
+  "**/*.js",
+  "**/*.ts",
+  "**/*.tsx",
+  ".next/types/**/*.ts",
+  "../../packages/ui/src/**/*.ts",
+  "../../packages/ui/src/**/*.tsx"
+],
   "exclude": ["node_modules"],
 }

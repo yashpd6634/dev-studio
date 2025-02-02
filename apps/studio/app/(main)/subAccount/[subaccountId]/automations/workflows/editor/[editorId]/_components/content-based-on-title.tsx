@@ -1,7 +1,7 @@
-import { AccordionContent } from "@ui/components/ui/accordion";
-import { ConnectionProviderProps } from "@ui/providers/connections-provider";
-import { AutomationEditorState } from "@ui/providers/editor-provider";
-import { nodeMapper } from "@ui/lib/types";
+import { AccordionContent } from "@repo/ui/components/ui/accordion";
+import { ConnectionProviderProps } from "@repo/ui/providers/connections-provider";
+import { AutomationEditorState } from "@repo/ui/providers/editor-provider";
+import { nodeMapper } from "@repo/ui/lib/types";
 import React, { useEffect } from "react";
 import {
   Card,
@@ -9,9 +9,9 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
-import { Input } from "@ui/components/ui/input";
-import { onContentChange } from "@ui/lib/editor-utils";
+} from "@repo/ui/components/ui/card";
+import { Input } from "@repo/ui/components/ui/input";
+import { onContentChange } from "@repo/ui/lib/editor-utils";
 import GoogleFileDetails from "./google-file-details";
 import GoogleDriveFiles from "./google-drive-files";
 import ActionButton from "./action-button";

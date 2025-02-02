@@ -1,10 +1,10 @@
-import { getFunnels } from "@ui/lib/queries";
+import { getFunnels } from "@repo/ui/lib/queries";
 import React from "react";
 import FunnelsDataTable from "./data-table";
 import { Plus } from "lucide-react";
 import { columns } from "./columns";
-import FunnelForm from "@ui/components/forms/funnel-form";
-import BlurPage from "@ui/components/global/blur-page";
+import FunnelForm from "@repo/ui/components/forms/funnel-form";
+import BlurPage from "@repo/ui/components/global/blur-page";
 
 const Funnels = async ({ params }: { params: { subaccountId: string } }) => {
   const funnels = await getFunnels(params.subaccountId);

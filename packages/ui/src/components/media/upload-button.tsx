@@ -1,5 +1,5 @@
 "use client";
-import { useModal } from "@ui/providers/modal-provider";
+import { useModal } from "@repo/ui/providers/modal-provider";
 import React from "react";
 import { Button } from "../ui/button";
 import { CustomModal2 } from "../global/custom-modal";

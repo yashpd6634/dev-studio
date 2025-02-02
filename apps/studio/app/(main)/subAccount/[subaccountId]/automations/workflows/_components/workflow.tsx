@@ -5,11 +5,11 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@ui/components/ui/card";
+} from "@repo/ui/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
-import { Label } from "@ui/components/ui/label";
-import { Switch } from "@ui/components/ui/switch";
+import { Label } from "@repo/ui/components/ui/label";
+import { Switch } from "@repo/ui/components/ui/switch";
 import { toast } from "sonner";
 import { onFlowPublish } from "../_actions/workflow-connections";
 

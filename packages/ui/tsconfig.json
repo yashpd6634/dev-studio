@@ -6,6 +6,12 @@
       "@ui/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.tsx",
+    "src"
+  ],
   "exclude": ["node_modules"]
 }

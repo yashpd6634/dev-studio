@@ -3,7 +3,7 @@
 import {
   AutomationEditorActions,
   AutomationEditorNodeType,
-} from "@ui/lib/types";
+} from "@repo/ui/lib/types";
 import {
   Dispatch,
   createContext,

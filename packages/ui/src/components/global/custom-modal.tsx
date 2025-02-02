@@ -7,8 +7,8 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@ui/components/ui/drawer";
-import { useModal } from "@ui/providers/modal-provider";
+} from "@repo/ui/components/ui/drawer";
+import { useModal } from "@repo/ui/providers/modal-provider";
 
 import React from "react";
 import { Button } from "../ui/button";

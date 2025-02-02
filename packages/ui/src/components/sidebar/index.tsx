@@ -7,12 +7,12 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@ui/components/ui/tooltip";
-import { menuOptions } from "@ui/lib/constant";
+} from "@repo/ui/components/ui/tooltip";
+import { menuOptions } from "@repo/ui/lib/constant";
 import clsx from "clsx";
-import { Separator } from "@ui/components/ui/separator";
+import { Separator } from "@repo/ui/components/ui/separator";
 import { Database, GitBranch, LucideMousePointerClick } from "lucide-react";
-import { ModeToggle } from "@ui/components/global/mode-toggle";
+import { ModeToggle } from "@repo/ui/components/global/mode-toggle";
 
 type Props = {
   subaccountId: string;

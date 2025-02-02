@@ -1,4 +1,4 @@
-import { ContactUserFormSchema } from "@ui/lib/types";
+import { ContactUserFormSchema } from "@repo/ui/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { useForm } from "react-hook-form";

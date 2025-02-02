@@ -5,7 +5,7 @@ import { FunnelPage } from "@prisma/client";
 import React, { useState } from "react";
 import { useModal } from "@repo/ui/providers/modal-provider";
 import { AlertDialog } from "@repo/ui/components/ui/alert-dialog";
-import { ScrollArea } from "@ui/components/ui/scroll-area";
+import { ScrollArea } from "@repo/ui/components/ui/scroll-area";
 import { Check, ExternalLink, LucideEdit } from "lucide-react";
 import {
   DragDropContext,
@@ -23,9 +23,9 @@ import {
 } from "@repo/ui/components/ui/card";
 import Link from "next/link";
 import FunnelPagePlaceholder from "@repo/ui/components/icons/funnel-page-placeholder";
-import { toast } from "@ui/components/ui/use-toast";
+import { toast } from "@repo/ui/components/ui/use-toast";
 import { upsertFunnelPage } from "@repo/ui/lib/queries";
-import CreateFunnelPage from "@ui/components/forms/funnel-page";
+import CreateFunnelPage from "@repo/ui/components/forms/funnel-page";
 import FunnelStepCard from "./funnel-step-card";
 
 type Props = {

@@ -2,7 +2,7 @@
 import { CustomModal2 } from "@repo/ui/components/global/custom-modal";
 import { Button } from "@repo/ui/components/ui/button";
 import { useModal } from "@repo/ui/providers/modal-provider";
-import ContactUserForm from "@ui/components/forms/contact-user-form";
+import ContactUserForm from "@repo/ui/components/forms/contact-user-form";
 import React from "react";
 
 type Props = {
